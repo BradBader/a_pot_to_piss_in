@@ -20,7 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="/public/css/styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css">
 
 </head>
 
@@ -31,7 +31,7 @@
     <!-- Navbar -->
     <nav>
         <div class="nav-wrapper blue accent-1">
-            <img class="brand-logo" src="/images/barcode-it-logo.png">Logo</a>
+            <img class="brand-logo" src="/images/barcode-it-logo.png">Logo</a> --}}
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li class="active"><a href="/barcodes">Make Barcode</a></li>
                 <li class="active"><a href="">Inventory</a></li>
@@ -39,15 +39,9 @@
                 <li class="active"><a href="/">Home</a></li>
                 <li class="active"><a href="/signin">Login</a></li>
                 <li class="active"><a href="/registration">Register</a></li>
-                {{!-- <li>
-                    <form class="searchbar" action="/barcodes" method="GET">
-                        <div class="input-field">
-                            <input id="search" type="search" required>
-                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                            <i class="material-icons">close</i>
-                        </div>
-                    </form>
-                </li> --}}
+
+
+
             </ul>
             {{!-- <form class="searchbar" action="/barcodes" method="GET">
                 <div class="input-field">
@@ -63,16 +57,21 @@
 
 
         </div>
-        {{!-- <div class="nav-wrapper"> --}}
+        <div class="nav-wrapper blue accent-1">
+            <form class="searchbar" action="/barcodes" method"GET">
+                <div class="input-field">
+                    <input id="search barcode-number" type="search" name="barcode" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
 
-        {{!-- </div> --}}
+
+        </div>
+
     </nav>
 
-    <!-- Header Content -->
-    {{!-- <div class="header"> --}}
 
-    <!-- Logo -->
-    {{!-- <img class="logo" src="/images/barcode-it-logo.png" alt="Logo"> --}}
 
     <!-- Authentication -->
     {{!-- <div class="authenticationBar">
@@ -84,23 +83,6 @@
 
 
 
-
-    {{!-- <div class="navbar">
-        <div class="nav-content">
-
-            <a class="make-barcode unlink" href="/barcodes">Barcodes</a>
-            <span> | </span>
-            <a class="find-barcode unlink" href="#">Inventory</a>
-            <span> | </span>
-            <a class="camera-barcode unlink" href="/camera">Camera</a>
-
-            <!-- Search Bar -->
-            <form class="searchbar" action="/barcodes" method="GET">
-                <input id="barcode-number" type="text" placeholder="Barcode Number..." name="barcode">
-                <button id="submit-button" type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
-    </div> --}}
 
     <!--  Content -->
     <div class="body-content">
