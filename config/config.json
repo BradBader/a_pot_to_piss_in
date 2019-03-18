@@ -1,0 +1,24 @@
+{
+    "development": {
+        "username": "root",
+        "password": "root",
+        "database": "barcode_it_db",
+        "host": "localhost",
+        "dialect": "mysql"
+    },
+    "test": {
+        "username": "root",
+        "password": null,
+        "database": "testdb",
+        "host": "localhost",
+        "dialect": "mysql",
+        "logging": false
+    },
+    "production": {
+        "username": "xuhbmmm39rkxbk5p",
+        "password": "harljly9bwtzxbf0",
+        "database": "fwwmza5bok9s1ing",
+        "host": "zj2x67aktl2o6q2n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        "dialect": "mysql"
+    }
+}

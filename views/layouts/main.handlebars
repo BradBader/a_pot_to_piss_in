@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>BarCode-It</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../public/css/styles.css">
+
+</head>
+
+<body>
+
+
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper blue accent-1">
+            <img class="brand-logo" src="/images/barcode-it-logo.png">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="active"><a href="/barcodes">Make Barcode</a></li>
+                <li class="active"><a href="#">Inventory</a></li>
+                <li class="active"><a href="/camera">Camera</a></li>
+                <li class="active"><a href="/">Home</a></li>
+                <li class="active"><a href="/signin">Login</a></li>
+                <li class="active"><a href="/registration">Register</a></li>
+                {{!-- <li>
+                    <form class="searchbar" action="/barcodes" method="GET">
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </li> --}}
+            </ul>
+            {{!-- <form class="searchbar" action="/barcodes" method="GET">
+                <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form> --}}
+            {{!-- <form class="searchbar" action="/barcodes" method="GET">
+                        <input id="barcode-number" type="text" placeholder="Barcode Number..." name="barcode">
+                        <button id="submit-button" type="submit"><i class="fa fa-search"></i></button>
+                    </form> --}}
+
+
+        </div>
+        {{!-- <div class="nav-wrapper"> --}}
+
+        {{!-- </div> --}}
+    </nav>
+
+    <!-- Header Content -->
+    {{!-- <div class="header"> --}}
+
+    <!-- Logo -->
+    {{!-- <img class="logo" src="/images/barcode-it-logo.png" alt="Logo"> --}}
+
+    <!-- Authentication -->
+    {{!-- <div class="authenticationBar">
+            <a class="login unlink" href="#">Login</a>
+            <a class="line unlink" href="#">|</a>
+            <a class="signup unlink" href="#">Register</a>
+        </div> --}}
+    {{!-- </div> --}}
+
+
+
+
+    {{!-- <div class="navbar">
+        <div class="nav-content">
+
+            <a class="make-barcode unlink" href="/barcodes">Barcodes</a>
+            <span> | </span>
+            <a class="find-barcode unlink" href="#">Inventory</a>
+            <span> | </span>
+            <a class="camera-barcode unlink" href="/camera">Camera</a>
+
+            <!-- Search Bar -->
+            <form class="searchbar" action="/barcodes" method="GET">
+                <input id="barcode-number" type="text" placeholder="Barcode Number..." name="barcode">
+                <button id="submit-button" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div> --}}
+
+    <!--  Content -->
+    <div class="body-content">
+        {{{body}}}
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer blue accent-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    {{!-- <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> --}}
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    {{!-- <h5 class="white-text">Links</h5> --}}
+                    <ul>
+                        <li><a class="github white-text" href="https://github.com/Milleniyum/Project2">Check us out on
+                                Github!</a></a></li>
+                        {{!-- <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> --}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                © 2019 Copyright
+                {{!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> --}}
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    {{!-- <div class="footer">
+        <a class="github" href="https://github.com/Milleniyum/Project2">Check us out on Github!</a>
+        <hr>
+        <p class="copyright">&copy; 2019</p>
+    </div> --}}
+
+    <script src="/javascript/main.js"></script>
+</body>
+
+</html>

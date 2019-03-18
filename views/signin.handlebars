@@ -1,0 +1,95 @@
+<div class="container allbrdr gr1 mrt50">
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <h2 class="center">You must sign in to do that thing.</h2>
+            <p class="smallbrdr"></p>
+        </div>
+        <div class="container center">
+            <form class="col s12 m12 l12 ">
+                <div class="row pdt10 pdl10">
+                    <div class="input-field col s6 m6 l6">
+                        <input id="user_name" type="text" class="validate">
+                        <label for="user_name">User Name</label>
+                        <span id="doesNotExist"></span>
+
+                    </div>
+                    <div class="input-field col s6 m6 l6">
+                        <input input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+
+    </div>
+    <button class="btn waves-effect waves-light grey dark-3 mrl10 mrb10" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+    </button>
+</div>
+<div class="container mrb50">
+    <a class="pdr10" href="index.html">I need to create an account.</a>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+<style>
+    .mrb20 {
+        margin-bottom: 20px;
+    }
+
+    .gr1 {
+        background-color: rgb(245, 243, 243)
+    }
+
+    .pdt10 {
+        padding-top: 10px
+    }
+
+    .pdl10 {
+        padding-left: 10px
+    }
+
+    .mrl10 {
+        margin-left: 10px
+    }
+
+    .mrb10 {
+        margin-bottom: 10px
+    }
+
+    h2 {
+        font-family: 'ZCOOL XiaoWei', serif;
+    }
+
+    .smallbrdr {
+        border-bottom: black solid 1px;
+        /* padding-left: 10%;
+            padding-right: 10%; */
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .allbrdr {
+        border: black solid 1px;
+    }
+
+    .mrt50 {
+        margin-top: 50px;
+    }
+
+    .mrb50 {
+        margin-bottom: 50px;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        M.updateTextFields();
+    });
+</script>
